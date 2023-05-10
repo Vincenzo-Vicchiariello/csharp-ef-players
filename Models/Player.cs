@@ -20,11 +20,23 @@ namespace csharp_ef_players.Models
         public int PlayerVictories { get; set; }
 
 
-        public string getPlayerId()
+        public string PlayerIDConvertToString()
         {
+            string PlayerIDReturn = "";
+           PlayerIDReturn = PlayerId.ToString();
+            return PlayerIDReturn;
+        }
 
-           // this.PlayerId = PlayerId.ToString();
-           // return this.PlayerId;
+        public override string ToString()
+        {
+           
+            string PlayerInfo= $"Nome: {Name}\n" + 
+                $"Cognome: {LastName}\n" + 
+                $"Punteggio: {PlayerScore}\n" + 
+                $"Partite Giocate: {PlayerMatches}\n" + 
+                $"Partite Vinte: {PlayerVictories}\n";
+
+            return PlayerInfo;
         }
 
 
