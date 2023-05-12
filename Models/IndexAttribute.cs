@@ -2,6 +2,11 @@
 {
     internal class IndexAttribute : Attribute
     {
+        public IndexAttribute(string v)
+        {
+            V = v;
+        }
+
         public IndexAttribute(string v, bool IsUnique)
         {
             V = v;

@@ -19,6 +19,9 @@ namespace csharp_ef_players.Models
         public int PlayerMatches { get; set; }
         public int PlayerVictories { get; set; }
 
+        public int TeamId { get; set; }
+        public string? PlayerTeam { get; set; }
+
 
         public string PlayerIDConvertToString()
         {

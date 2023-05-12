@@ -11,6 +11,7 @@ namespace csharp_ef_players.Models
     {
 
         public DbSet<Player> Players { get; set; }
+        public DbSet<Team> Teams { get; set; }  
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
