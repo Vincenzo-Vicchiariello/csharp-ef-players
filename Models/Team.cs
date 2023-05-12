@@ -20,7 +20,7 @@ namespace csharp_ef_players.Models
         public string TeamCoach { get; set; }
         public string TeamColours { get; set; }
 
-        public List<Team> PlayersOnATeam { get; set;}
+        public List<Team> Players { get; set;}
 
         public override string ToString()
         {
